@@ -1,0 +1,36 @@
+<html>
+
+<head>
+    <title>JSML</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css">
+</head>
+
+<body>
+
+    <h1>JSML - Javascript Markup Language</h1>
+    <hr>
+    <p>
+        Javascript has been a scripting language for so long, but now we are upgrading it.<br> We have added new functionalities and syntax to Javascript, And made JSML.<br> Here is an example of JSML code:
+
+        <pre><code>
+            <div JSML>
+                p(Welcome to JSML!);
+                <p>JSML also supports normal HTML inside!</p>
+                p(JSML has a similiar syntax to JSX, and easily allows you to blue(color) text!);
+            </div>
+        </code></pre> The output would be:
+
+        <pre>
+            <code>
+                <div JSML compiled>
+                    <p>Welcome to JSML!</p>
+                    <p>JSML also supports normal HTML inside!</p>
+                    <p>JSML has a similiar syntax to JSX, and easily allows you to <span compiler style="color: blue;">color</span> text!</p>
+                </div>
+            </code>
+        </pre>
+    </p>
+
+</body>
+
+</html>
