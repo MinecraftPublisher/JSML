@@ -4,26 +4,38 @@
     <title>JSML</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css">
     <script src="JSML/JSML.developement.js"></script>
+    <link rel="shortcut icon" href="assets/icon.png">
+    <link rel="apple-touch-icon" href="assets/icon.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 </head>
 
 <body>
 
-    <h1>JSML - Javascript Markup Language</h1>
-    <hr>
+    <div style="width: 100%; text-align: center;">
+        <img src="assets/icon.png"></img>
+        <h1>JSML - Javascript Markup Language</h1>
+        <hr>
+        <br>
+        <p>
+            <button style="width: 30%; height: 70; font-size: 150%;" onclick="start();">Get started</button>
+        </p>
+    </div>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
     <p>
-        Javascript has been a scripting language for so long, but now we are upgrading it.<br> We have added new functionalities and syntax to Javascript, And made JSML.<br> Here is an example of JSML code:
+        Javascript has been a scripting language for so long, but now we are upgrading it.<br> We have added new functionalities and syntax to Javascript and removed some features from it, And made JSML.<br> Here is an example of JSML code:
 
         <pre><code>&lt;div JSML>
-    p(Welcome to JSML!);
+    p("Welcome to JSML!"");
     &lt;p>JSML also supports normal HTML inside!&lt;/p>
-    p(JSML has a similiar syntax to JSX, and easily allows you to paint(blue, color) text!);
+    p("JSML has a similiar syntax to JSX, and easily allows you to " + paint(blue, color)" + " text!");
 &lt;/div></code></pre> The output would be:
 
         <pre>
 <code>&lt;div JSML compiled>
     &lt;p>Welcome to JSML!&lt;/p>
     &lt;p>JSML also supports normal HTML inside!&lt;/p>
-    &lt;p>JSML has a similiar syntax to JSX, and easily allows you to <span compiler style="color: blue;">color</span> text!&lt;/p>
+    &lt;p>JSML has a similiar syntax to JSX, and easily allows you to <span style="color: blue;">color</span> text!&lt;/p>
 &lt;/div></code>
         </pre> This is a live JSML example of the code shown above:
 
@@ -32,7 +44,30 @@
             <p>JSML also supports normal HTML inside!</p>
             p(JSML has a similiar syntax to JSX, and easily allows you to paint(blue, color) text!);
         </div>
+        <br><br><br><br><br><br><br><br>
     </p>
+
+    <style>
+        pre {
+            width: 100%;
+            word-wrap: normal;
+            white-space: pre-wrap;
+            white-space: -moz-pre-wrap;
+            white-space: -pre-wrap;
+            white-space: -o-pre-wrap;
+            word-wrap: break-word;
+        }
+    </style>
+
+    <script>
+        function start() {
+            window.scroll({
+                top: 1000,
+                left: 0,
+                behavior: 'smooth'
+            });
+        }
+    </script>
 
 </body>
 
